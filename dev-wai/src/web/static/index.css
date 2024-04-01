@@ -1,0 +1,211 @@
+body{
+    width: 100%;
+    margin: 0;
+    margin-right: 0;
+    margin-top: 0;
+    font-size: 19px;
+    background-color: rgb(243, 212, 212);
+    font-family: 'Oswald', sans-serif;
+}
+.header-image{
+    width: 100%;
+    height: 650px;
+    background-image: url("image1.jpg");
+    animation-name: animation;
+     animation-duration: 5s;
+}
+header{
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    height: 57px;
+    flex-direction: row;
+}
+.header-text{
+    padding-top: 300px;
+    display: flex;
+    text-align: center;
+    align-items:center;
+    justify-content:center;
+    margin: auto;       
+}
+.nav-ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}  
+.nav-li {
+    float: left;
+}
+.nav-li a {
+    display: block;
+    color: rgb(126, 125, 125);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li:hover {
+    background-color: #111;
+}
+#active{
+    color: beige;
+    width: 88px;
+}
+.drop-link{
+   width: 75px;
+}
+li {
+    padding-top: 1px;
+    display: block;
+    transition-duration: 0.5s;
+}
+li:hover {
+    cursor: pointer;
+}
+ul li ul {
+    padding-top: 0.5px;
+    background-color: #333;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    padding-left: 0;
+    display: none;
+  }
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+    
+  clear: both;
+  width: 100%;
+}
+
+.main-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+    .image1{
+        width: 400px;
+        height: 225px;
+    } 
+    .main-content{
+        padding-left: 15px;
+        padding-right: 15px;
+    }   
+.main-content ul li:hover{
+    background-color: rgb(218, 167, 167); ;
+}
+h3{
+    margin-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+.description{
+    padding-left: 10px;
+ 
+}
+ul{
+    list-style: none;
+}
+
+
+.painting{
+    width: 350px;
+    padding-left: 60px;
+    padding-top: 60px;
+    height: 500px;
+    float: left;
+}
+img{
+    height: 200px;
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+.pictures-gallery{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.pic1{
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 7px;
+    margin-left: 60px;
+    padding-left: 0;
+    height: 250px;
+    width: 400px;
+}
+.description{
+    margin-left: 5px;
+}
+.main{
+    display: flex;
+    text-align: justify;
+    padding-right: 30px;
+    flex-direction: row;
+}
+#claudeMonet{
+    padding-top: 10px;
+    width: 100%;
+    background-color: rgba(228, 150, 150, 0.801);
+}
+.background{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 650px;
+    text-align: justify;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: rgba(228, 150, 150, 0.801);
+}
+.painting{
+    width: 350px;
+    padding-left: 60px;
+    padding-top: 60px;
+    height: 500px;
+    float: left;
+}
+.paint-text{
+    text-align: justify;
+}
+h2{
+    text-align: center;
+}
+table, th, td,tr{
+    border: 1px solid;
+}
+.benefits{
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 47px;
+}
+footer{
+    text-align: center;
+}
+p::first-letter{
+    font-size: 2.5vw;
+}
+
+.contact{
+   color: rgb(80, 79, 79);
+   text-decoration: none;
+}
+.contact:hover{
+    color: rgb(136, 136, 136);
+}
