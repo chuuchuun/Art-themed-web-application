@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="gallery.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui.theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="jquery-ui.js"></script>
+    <noscript><link rel="stylesheet" href="noscript.css"></noscript>
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <nav class="topnav">
+            <ul class="nav-ul">
+                <li class="nav-li">
+                    <a href="main.html">Strona główna</a>
+                </li>
+                <li class="nav-li">
+                    <a id="active" href="gallery.html">Galeria</a>
+                </li>
+                <li class="nav-li">
+                    <a href="contact.html">Formularz kontaktowy</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div id="claudeMonet">
+            <h3>Oscar-Claude Monet</h3>
+            <p>
+            <img id="pic1" src="impressionsunrise.jpg" alt="Impresja, Wschód Słońca">
+            Oscar-Claude Monet (14 listopada 1840 - 5 grudnia 1926) był francuskim malarzem i twórcą malarstwa impresjonistycznego, który jest postrzegany jako kluczowy prekursor modernizmu, zwłaszcza w jego próbach malowania natury tak, jak ją postrzegał. W swojej długiej karierze był najbardziej konsekwentnym i płodnym praktykiem impresjonistycznej filozofii wyrażania własnych spostrzeżeń przed naturą, zwłaszcza w odniesieniu do plenerowego malarstwa pejzażowego. Termin „impresjonizm” pochodzi od tytułu jego obrazu Impression, soleil levant, wystawionego w 1874 r. („wystawa odrzutów”) zainicjowanego przez Moneta i jego współpracowników jako alternatywa dla Salonu.
+            Monet wychował się w Le Havre w Normandii i od najmłodszych lat interesował się przyrodą i rysunkiem. Chociaż jego matka, Louise-Justine Aubrée Monet, wspierała jego ambicje bycia malarzem, jego ojciec, Claude-Adolphe, nie pochwalał tego i chciał, aby kontynuował karierę w biznesie. Był bardzo blisko z matką, ale zmarła w styczniu 1857 roku, gdy miał szesnaście lat, i został wysłany do swojej bezdzietnej, owdowiałej, ale bogatej ciotki Marie-Jeanne Lecadre. Kontynuował naukę w Académie Suisse i pod kierunkiem akademickiego malarza historii Charlesa Gleyre'a , gdzie był kolegą z klasy Auguste'a Renoira . Jego wczesne prace obejmują pejzaże, pejzaże morskie i portrety, ale nie przyciągały zbytniej uwagi. Kluczowym wczesnym wpływem był Eugène Boudin, który wprowadził go w koncepcję malarstwa plenerowego. Od 1883 roku Monet mieszkał w Giverny, również w północnej Francji, gdzie kupił dom i posiadłość i rozpoczął rozległy projekt krajobrazu, w tym staw z liliami wodnymi.
+           </p>
+           <button onclick="loadImageClaude()" id="loadButton">Załaduj więcej obrazów</button>
+        </div>
+    </div>
+   
+<p>
+	<button id="dialog-link" class="ui-button ui-corner-all ui-widget">
+		<span class="ui-icon ui-icon-newwin"></span>
+        Niektóre dodatkowe informacje
+	</button>
+</p>
+<div id="dialog" title="Impresja, Wschód Słońca">
+	<p class="dialog">
+        Impresja, Wschód Słońca(francuski: Impression, soleil levant) to obraz Claude'a Moneta z 1872 roku pokazany po raz pierwszy na tak zwanej „Wystawie impresjonistów” w Paryżu w kwietniu 1874 roku. Ruch impresjonistyczny.
+        Impresja, Wschód Słońca przedstawia port Le Havre, rodzinne miasto Moneta. Obecnie jest wystawiany w Musée Marmottan Monet w Paryżu.
+    </p>
+</div>
+    <script src="gallery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+
+
+$( "#button" ).button();
+$( "#button-icon" ).button({
+	icon: "ui-icon-gear",
+	showLabel: false
+});
+$( "#dialog" ).dialog({
+	autoOpen: false,
+	width: 400,
+	buttons: [
+		{
+			text: "Ok",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		{
+			text: "Cancel",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		}
+	]
+});
+$( "#dialog-link" ).click(function( event ) {
+	$( "#dialog" ).dialog( "open" );
+	event.preventDefault();
+});
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+    <footer>
+        <p>Kontakty:
+        <br>
+        tel:<a class="contact" href="tel:+48000000000">+48 000 000 000</a>
+        <br>
+        e-mail:<a class="contact" href="mailto:art@gmail.com">art@gmail.com</a></p>
+    </footer>
+</body>
+</html>

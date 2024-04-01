@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="main.css">
+    <noscript><link rel="stylesheet" href="noscript.css"></noscript>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="riot-slider.min.css">
+    <script src="riot-slider.min.js"></script>
+    <title>Sztuka</title>
+</head>
+<body>
+    <header>
+        <nav class="topnav">
+            <ul class="nav-ul">
+                <li class="nav-li">
+                    <a id="active" href="main.html">Strona główna</a>
+                </li>
+                <li class="nav-li">
+                    <a href="gallery.html">Galeria</a>
+                </li>
+                <li class="nav-li">
+                    <a href="contact.html">Formularz kontaktowy</a>
+                </li>
+                <li class="nav-li">
+                    <a id="lang" onclick="changeLang()">Zmień język</a>
+                </li>
+                <li class="nav-li">
+                    <a id="pic" onclick="changePic()">Zmień zdjęcie</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <script src="main1.js"></script> 
+        
+    <div id="headerImage" class="header-image">
+        <div class="header-text">
+            <h2 id="headerText">
+                Krótka wycieczka do historii sztuk pięknych.
+            </h2>
+        </div>
+    </div>
+    <div class="main-content">
+        <div>
+            <h2>
+                Niektóre z najbardziej znanych obrazów</h2>
+            <ul class="main-images">
+                <li>
+                    <p>
+                        <img src="thelastsupper.jpg" alt="Ostatnia wieczerza" class="image1">
+                    </p>    
+                    <p>
+                        <h3>
+                            Ostatnia wieczerza
+                        </h3>
+                        Artysta: Leonardo da Vinci
+                        <br> 
+                        Szacowana data: 1495 do 1498
+                        <br>        
+                        Gdzie to zobaczyć: Santa Maria delle Grazie (Mediolan, Włochy)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <img src="girlwithapearlearring.jpg" alt="Dziewczyna z perłą" class="image1">
+                    </p>
+                    <p>
+                        <h3>
+                        Dziewczyna z perłą
+                        </h3>
+                        Artysta: Johannes Vermeer
+                        <br>
+                        Szacowana data: 1665
+                        <br>
+                        Gdzie to zobaczyć: Mauritshuis (Haga, Holandia)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <img src="thebirthofvenus.jpg" alt="Narodziny Wenus" class="image1">
+                    </p>
+                    <p>
+                        <h3>
+                            Narodziny Wenus
+                        </h3>
+                        Artysta: Sandro Botticelli
+                        <br>
+                        Szacowana data: 1485
+                        <br>
+                        Gdzie to zobaczyć: Le Gallerie Degli Uffizi (Florencja, Włochy)
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="slider">
+        <ul class="riot-slider" 
+        data-do-console-log="true" 
+        data-use-material-icons="true" 
+        data-is-auto-play="true"
+        data-do-show-buttons="true"
+        data-do-swipe-on-touchscreen="true"
+        data-button-number-display="default"
+        data-previous-next-display="both"
+        data-theme="default"
+        data-slide-hold-seconds="2">
+            <li data-caption="Mona Lisa">
+                <img src="monalisa.jpg" alt="Mona Lisa" class="carousel" />
+            </li>
+              <li data-caption="Gwiaździsta noc">
+                <img src="starrynight.jpg" alt="Gwiaździsta noc" class="carousel"/>
+            </li>
+              <li data-caption="Krzyk">
+                <img src="thescream.jpg" alt="Krzyk" class="carousel" />
+            </li>
+            </ul>
+        </div>
+    <div class="background">
+        <p class="paint-text">
+            <img src="paint.jpg" class="painting"alt="obraz">
+        </p>
+        <div class="benefits">
+            <p>
+                <h2>Korzyści sztuki</h2>
+                Sztuka zapewnia studentom wiele korzyści. To naprawdę zdumiewające, widzieć ogromną różnorodność umiejętności, które uczniowie mogą rozwijać i zdobywać dzięki zwykłemu uczestnictwu w sztuce. Umiejętności te są przydatne nie tylko w dzieciństwie, ale są równie ważne w życiu dorosłym i przydatne w prawdziwym świecie. Skoncentrujmy naszą uwagę na niektórych ważnych umiejętnościach, które uczniowie zdobywają poprzez udział w zajęciach artystycznych.
+            </p>
+            <p>
+                <h3>Koncentracja i rozwiązywanie problemów</h3>
+                Uczniowie biorący udział w zajęciach plastycznych wzmacniają umiejętność koncentracji. Uczniowie muszą skupić się na „problemie”, który mają do rozwiązania. W przypadku sztuk wizualnych problemem może być określenie, które narzędzia artystyczne lub materiały skutecznie stworzą obraz, który mają w swoich umysłach. W przypadku sztuki performatywnej uczniowie mogą potrzebować dokładnego wyczucia czasu, aby wejść na zawołanie. Niezależnie od medium artystycznego, uczniowie muszą być na bieżąco z tym, co się dzieje, aby pomyślnie ukończyć swoją pracę.
+            </p>
+            <p>
+                <h3>Wewnętrzna motywacja</h3>
+                Motywacja wewnętrzna jest definiowana jako robienie czegoś bez oczekiwania jakiejkolwiek nagrody zewnętrznej. Studenci wezmą udział w sztuce, nie dbając o to, czy zostaną docenieni za swoją pracę. Ponadto sztuka nie jest uważana za obowiązek ani „pracę” dla większości uczniów. Sztuka stwarza uczniom poczucie radości i naturalnie chcą dzielić się zabawą. Studenci po prostu cieszą się procesem tworzenia sztuki.
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Kontakty:
+            <br>
+        tel:<a class="contact"href="tel:+48000000000">+48 000 000 000</a>
+        <br>
+        e-mail:<a class="contact" href="mailto:art@gmail.com">art@gmail.com</a></p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
+    <noscript><link rel="stylesheet" href="noscript.css"></noscript>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="riot-slider.min.css">
+    <script src="riot-slider.min.js"></script>
+    <title>Fine arts</title>
+</head>
+<body>
+    <header>
+        <nav class="topnav">
+            <ul class="nav-ul">
+                <li class="nav-li">
+                    <a id="active"  href="index.html">Main</a>
+                </li>
+                <li class="nav-li">
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-li">
+                    <a href="contact.html">Contact form</a>
+                </li>
+                <li class="nav-li">
+                    <a id="lang" onclick="changeLang()">Change the language</a>
+                </li>
+                <li class="nav-li">
+                    <a id="pic" onclick="changePic()">Change the picture</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <script src="index1.js"></script> 
+    <div class="header-image" id="headerImage">
+        <div class="header-text">
+            <h2 id="headerText">
+                A brief excursion into the history of fine arts.
+            </h2>
+        </div>
+    </div>
+    <div class="main-content">
+        <div>
+            <h2>Some of the most famous paintings</h2>
+            <ul class="main-images">
+                <li>
+                    <p>
+                        <img src="thelastsupper.jpg" alt="The Last Supper" class="image1">
+                    </p>    
+                    <p>
+                        <h3>
+                            The Last Supper
+                        </h3>
+                        Artist: Leonardo da Vinci
+                        <br>
+                        Estimated date: 1495 to 1498
+                        <br>
+                        Where to see it: Santa Maria delle Grazie (Milan, Italy)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <img src="girlwithapearlearring.jpg" alt="Girl With A Pearl Earring" class="image1">
+                    </p>
+                    <p>
+                        <h3>
+                            Girl With A Pearl Earring
+                        </h3>
+                        Artist: Johannes Vermeer
+                        <br>
+                        Estimated date: 1665
+                        <br>
+                        Where to see it: Mauritshuis (The Hague, Netherlands)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <img src="thebirthofvenus.jpg" alt="The Birth Of Venus" class="image1">
+                    </p>
+                    <p>
+                        <h3>
+                            The Birth Of Venus
+                        </h3>
+                        Artist: Sandro Botticelli
+                        <br>
+                        Estimated date: 1485
+                        <br>
+                        Where to see it: Le Gallerie Degli Uffizi (Florence, Italy)
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div id="slider">
+        <ul class="riot-slider" 
+        data-do-console-log="true" 
+        data-use-material-icons="true" 
+        data-is-auto-play="true"
+        data-do-show-buttons="true"
+        data-do-swipe-on-touchscreen="true"
+        data-button-number-display="default"
+        data-previous-next-display="both"
+        data-theme="default"
+        data-slide-hold-seconds="2">
+            <li data-caption="Mona Lisa">
+                <img src="monalisa.jpg" alt="Mona Lisa" class="carousel" />
+            </li>
+              <li data-caption="Starry night">
+                <img src="starrynight.jpg" alt="Starry Night" class="carousel"/>
+            </li>
+              <li data-caption="The Scream">
+                <img src="thescream.jpg" alt="The Scream" class="carousel" />
+            </li>
+            </ul>
+        </div> 
+    </div>
+    <div class="background">
+        <p class="paint-text">
+            <img src="paint.jpg" class="painting"alt="painting">
+        </p>
+        <div class="benefits">
+            <p>
+                <h2>Benefits of Art</h2>
+                Art provides numerous benefits to students. It is actually quite astonishing to see the huge variety of skills that students can develop and gain from simply participating in art. These skills are not only beneficial during childhood, but they are also equally as important on into adulthood and useful in the real world. Let’s focus our attention on some of the important skills that students gain through participation in the arts.
+            </p>
+            <p>
+                <h3>Focus and Problem Solving</h3>
+                Students who participate in art strengthen their focus skills. Students must focus on the “problem” at hand. For visual art, that problem may be determining which art tools or materials will effectively create the picture that they have in their minds. For performance art, students may need accurate timing to come in on cue. Regardless of the art medium, students must stay in tune with what is happening in order to successfully complete their work.
+            </p>
+            <p>
+                <h3>Intrinsic Motivation</h3>
+                Intrinsic motivation is defined as doing something without expecting any external reward. Students will take part in art without any care as to whether or not they will be given recognition for their work. Additionally, art is not considered a chore or “work” for most students. Art creates a sense of enjoyment in students, and they naturally want to share in the fun. Students simply enjoy the process of creating art.
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Contacts:
+            <br>
+        tel:<a class="contact"href="tel:+48000000000">+48 000 000 000</a>
+        <br>
+        e-mail:<a class="contact" href="mailto:art@gmail.com">art@gmail.com</a></p>
+    </footer>
+    
+</body>
+</html>

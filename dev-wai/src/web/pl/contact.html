@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="jquery-ui.js"></script>
+    <noscript><link rel="stylesheet" href="noscript.css"></noscript>
+    <title>Formularz kontaktowy</title>
+</head>
+<body onload="init()">
+    <script src="contact.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <header>
+        <nav class="topnav">
+            <ul class="nav-ul">
+                <li class="nav-li">
+                    <a href="main.html">Strona główna</a>
+                </li>
+                <li class="nav-li">
+                    <a href="gallery.html">Galeria</a>
+                </li>
+                <li class="nav-li">
+                    <a id="active" href="contact.html">Formularz kontaktowy</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div>
+            <h2>Formularz kontaktowy do szkoły artystycznej </h2>
+            <form action="odbierz.php" method="post">
+                <label for="fname">Imię:</label>
+                <input type="text" id="fname" name="fname" placeholder="Wprowadź imię">
+                <br>
+                <label for="sname">Nazwisko:</label>
+                <input type="text" id="sname" name="sname" placeholder="Wprowadź nazwisko">
+                <br>
+                <div class="widget">
+                    <fieldset>
+                      <legend>Wybierz swój zawód: </legend>
+                      <label for="radio-1">Student sztuki</label>
+                      <input type="radio" name="radio-1" id="radio-1">
+                      <label for="radio-2">Nauczyciel sztuki</label>
+                      <input type="radio" name="radio-1" id="radio-2">
+                      <label for="radio-3">Inne</label>
+                      <input type="radio" name="radio-1" id="radio-3">
+                    </fieldset>
+                    <fieldset>
+                      <legend>Co chciał(a)byś studiować:</legend>
+                      <label for="checkbox-1">Profesjonalna sztuka</label>
+                      <input type="checkbox" name="checkbox-1" id="checkbox-1">
+                      <label for="checkbox-2">Historia sztuki</label>
+                      <input type="checkbox" name="checkbox-2" id="checkbox-2">
+                      <label for="checkbox-3">Przywrócenie</label>
+                      <input type="checkbox" name="checkbox-3" id="checkbox-3">
+                      <label for="checkbox-4">Rzeźba</label>
+                      <input type="checkbox" name="checkbox-4" id="checkbox-4">
+                    </fieldset>
+                    <fieldset>
+                      <legend>Preferowany harmonogram: </legend>
+                      <label for="checkbox-nested-1">9.00/11.00
+                        <input type="checkbox" name="checkbox-nested-1" id="checkbox-nested-1">
+                      </label>
+                      <label for="checkbox-nested-2">12.00/14.00
+                        <input type="checkbox" name="checkbox-nested-2" id="checkbox-nested-2">
+                      </label>
+                      <label for="checkbox-nested-3">16.00/18.00
+                        <input type="checkbox" name="checkbox-nested-3" id="checkbox-nested-3">
+                      </label>
+                      <label for="checkbox-nested-4">19.00/21.00
+                        <input type="checkbox" name="checkbox-nested-4" id="checkbox-nested-4">
+                      </label>
+                    </fieldset>
+                  </div>
+                  <input type="submit" value="Zatwierdź">
+                  <input type="reset" value="Wyczyścić">
+            </form>
+        </div>
+       </div>
+        <div class="question-form">
+            <h3>Witaj <span id="name"></span>, tutaj możesz zadać dowolne pytanie dotyczące naszej szkoły artystycznej.</h3>
+            <p class="center">Postaramy się jak najszybciej na nie odpowiedzieć.</p>
+            <div id="taskList"></div>
+            <input type="text" id="task">
+            <button id="taskButton" onclick="addTask()">Dodaj</button>
+        </div>
+    <footer>
+        <p>Kontakty::
+            <br>
+        tel:<a class="contact" href="tel:+48000000000">+48 000 000 000</a>
+        <br>
+        e-mail:<a class="contact" href="mailto:art@gmail.com">art@gmail.com</a></p>
+    </footer>
+    
+</body>
+</html>
+
+        

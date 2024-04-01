@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="gallery.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui.theme.css">
+    <noscript><link rel="stylesheet" href="noscript.css"></noscript>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <nav class="topnav">
+            <ul class="nav-ul">
+                <li class="nav-li">
+                    <a href="index.html">Main</a>
+                </li>
+                <li class="nav-li">
+                    <a id="active" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-li">
+                    <a href="contact.html">Contact form</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div id="claudeMonet">
+            <h3>Oscar-Claude Monet</h3>
+            <p>
+            <img id="pic1" src="impressionsunrise.jpg" alt="Impression, Sunrise">
+            Oscar-Claude Monet (14 November 1840 – 5 December 1926) was a French painter and founder of impressionist painting who is seen as a key precursor to modernism, especially in his attempts to paint nature as he perceived it. During his long career, he was the most consistent and prolific practitioner of impressionism's philosophy of expressing one's perceptions before nature, especially as applied to plein air (outdoor) landscape painting. The term "Impressionism" is derived from the title of his painting Impression, soleil levant, exhibited in the 1874 ("exhibition of rejects") initiated by Monet and his associates as an alternative to the Salon.
+            Monet was raised in Le Havre, Normandy, and became interested in the outdoors and drawing from an early age. Although his mother, Louise-Justine Aubrée Monet, supported his ambitions to be a painter, his father, Claude-Adolphe, disapproved and wanted him to pursue a career in business. He was very close to his mother, but she died in January 1857 when he was sixteen years old, and he was sent to live with his childless, widowed but wealthy aunt, Marie-Jeanne Lecadre. He went on to study at the Académie Suisse, and under the academic history painter Charles Gleyre, where he was a classmate of Auguste Renoir. His early works include landscapes, seascapes, and portraits, but attracted little attention. A key early influence was Eugène Boudin who introduced him to the concept of plein air painting. From 1883, Monet lived in Giverny, also in northern France, where he purchased a house and property and began a vast landscaping project, including a water-lily pond.
+           </p>
+           <button onclick="loadImageClaude()" id="loadButton">Load more images</button>
+        </div>
+    </div>
+   
+<p>
+	<button id="dialog-link" class="ui-button ui-corner-all ui-widget">
+		<span class="ui-icon ui-icon-newwin"></span>Some additional information
+	</button>
+</p>
+<div id="dialog" title="Impression, Sunrise">
+	<p>
+        Impression, Sunrise (French: Impression, soleil levant) is an 1872 painting by Claude Monet first shown at what would become known as the "Exhibition of the Impressionists" in Paris in April, 1874. The painting is credited with inspiring the name of the Impressionist movement.
+        Impression, Sunrise depicts the port of Le Havre, Monet's hometown. It is now displayed at the Musée Marmottan Monet in Paris.
+    </p>
+</div>
+    <script src="gallery.js"></script>
+    <script src="jquery-ui.js"></script>
+<script>
+
+
+$( "#button" ).button();
+$( "#button-icon" ).button({
+	icon: "ui-icon-gear",
+	showLabel: false
+});
+$( "#dialog" ).dialog({
+	autoOpen: false,
+	width: 400,
+	buttons: [
+		{
+			text: "Ok",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		{
+			text: "Cancel",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		}
+	]
+});
+$( "#dialog-link" ).click(function( event ) {
+	$( "#dialog" ).dialog( "open" );
+	event.preventDefault();
+});
+
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+    <footer>
+        <p>Contacts:
+        <br>
+        tel:<a class="contact" href="tel:+48000000000">+48 000 000 000</a>
+        <br>
+        e-mail:<a class="contact" href="mailto:art@gmail.com">art@gmail.com</a></p>
+    </footer>
+</body>
+</html>

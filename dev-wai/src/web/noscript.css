@@ -1,0 +1,27 @@
+#slider{
+    display: none;
+}
+#pic{
+    display: none;
+}
+#lang{
+    display: none;
+}
+#dialog{
+    display: none;
+}
+.carousel{
+    display: none;
+}
+#loadButton{
+    display: none;
+}
+#dialog-link{
+    display: none;
+}
+.question-form{
+    display: none;
+}
+.dialog{
+    display: none;
+}
